@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hospital Internacional de Talca</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <div>
+        <div>
+            <header class="header">
+                <div>
+                    <h1 class="header__title">Hospital Internacional de Talca</h1>
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__a" href="./home.html">Home</a></li>
+                            <li class="nav__item"><a class="nav__a" href="./equipo.html">Equipo Médico</a></li>
+                            <li class="nav__item"><a class="nav__a" href="./contacto.html">Contacto</a></li>
+                            <li class="nav__item"><button type="button" class="btn btn-primary header__button--btn-primary">Reservar Cita</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div>
+            <main class="equipo">
+                <div>
+                    <section class="equipo__section">
+                        <h2 class="equipo__title">Presentación</h2>
+                        <p class="equipo__text">Somos un equipo comprometido con la excelencia. 
+                            Deje su salud en nuestras manos.
+                        </p>
+                    </section>
+                </div>
+                <div>
+                    <section class="equipo__section">
+                        <ul class="section__list">
+                            <li class="section__item">
+                                <img src="src/img/equipo/equipo1.jpeg" width="96" height="96">
+                                <h3 class="equipo__text">Dr. Juan Carnicer O.</h3>
+                                <h4 class="equipo__text">Cirugía Plástica</h4>
+                                <p class="equipo__text">Una gran trayectoria en las carnicerías de la región.
+                                    Ganador del premio nacional al mejor carnicero 2024. 
+                                </p>
+                            </li>
+                            <li class="section__item">
+                                <img src="src/img/equipo/equipo2.jpeg" width="96" height="96">
+                                <h3 class="equipo__text">Dra. Elba Lazo</h3>
+                                <h4 class="equipo__text">Medicina General</h4>
+                                <p class="equipo__text">Despacha a todos sus pacientes. 
+                                    Si tienes alguna queja, será la última.
+                                </p>
+                            </li>
+                            <li class="section__item">
+                                <img src="src/img/equipo/equipo3.jpeg" width="96" height="96">
+                                <h3 class="equipo__text">Dr. Aquiles Castro</h3>
+                                <h4 class="equipo__text">Urología</h4>
+                                <p class="equipo__text">Un profesional que le hace honor a su nombre. 
+                                </p>
+                            </li>
+                            <li class="section__item">
+                                <img src="src/img/equipo/equipo4.jpeg" width="96" height="96">
+                                <h3 class="equipo__text">Dra. Clara Melo</h3>
+                                <h4 class="equipo__text">Nutricionista</h4>
+                                <p class="equipo__text">Es una doctora muy dulce.</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div>
+                    <h2>Lab Virtual 2</h2> 
+                    <section id="funcional-section">
+                        <h3>1. Programación Funcional en JavaScript</h3>
+                        <button onclick="costoPaciente(3,50000)">costoPaciente(3,50000) = 150000</button>
+                        <button onclick="tiempoPromedio([15, 20, 30])">tiempoPromedio([15, 20, 30]) = 21.67</button>
+                        <button onclick="horasTotales([3, 4, 5, 2])">horasTotales([3, 4, 5, 2]) = 14</button>
+                        <button onclick="costoConDescuento(150000, 0.1)">costoConDescuento(150000, 0.1) = 135000</button>
+                        <pre id="funcional-output"></pre>
+                    </section>
+                    <section id="poo-section">
+                        <h3>3. Programación Orientada a Objetos en JavaScript</h3>
+                        <button onclick="crearObjetoConClase()">Crear Objeto con Clase</button>
+                        <button onclick="demostrarHerencia()">Demostrar Herencia</button>
+                        <pre id="poo-output"></pre>
+                    </section>
+                </div>
+                <div>
+                    <h2>Lab Virtual 1</h2>
+                    <h3>Lab Virtual 1.1. Doctores desde json</h3> 
+                    <section id="doctores-info"></section>
+                    <section id="json-section">
+                        <h3>Lab Virtual 1.2. Manipulación de JSON</h3>
+                        <button onclick="asignarJSON1()">Asignar JSON hospital1</button>
+                        <button onclick="asignarJSON2()">Asignar JSON hospital2</button>
+                        <button onclick="mostrarJSON()">Mostrar JSON</button>
+                        <button onclick="clonarJSON()">Clonar JSON</button>
+                        <button onclick="mergeJSON()">Merge JSON</button>
+                        <button onclick="stringifyJSON()">Stringify JSON</button>
+                        <button onclick="parseJSON()">Parse JSON</button>
+                        <button onclick="recorrerJSON()">Recorrer JSON</button>
+                        <button onclick="destructurarJSON()">Destructurar JSON</button>
+                        <pre id="json-output"></pre>
+                    </section>
+                    <section id="estructuras-datos-section">
+                        <h3>Lab Virtual 1.3. Estructuras de Datos en JavaScript</h3>
+                        <button onclick="mostrarArreglo()">Mostrar Arreglo</button>
+                        <button onclick="iniArregloDoctores()">Inicializar Arreglo Doctores</button>
+                        <button onclick="agregarElementoArreglo(prompt('Ingresa un elemento para agregar al arreglo:'))">Agregar Elemento al Arreglo</button>
+                        <button onclick="agregarInternoElementoArreglo()">Agregar Elemento JSON al Arreglo</button>
+                        <button onclick="eliminarElementoArreglo()">Eliminar Último Elemento del Arreglo</button>
+                        <button onclick="mostrarPilaAgenda()">Mostrar Pila Agenda</button>
+                        <button onclick="iniPilaAgenda()">Apilar 3 nuevos pacientes</button>
+                        <button onclick="desapilarPilaAgenda()">Desapilar un elemento de la Pila</button>
+                        <button onclick="mostrarCola()">Mostrar Cola</button>
+                        <button onclick="iniCola()">Agregar 3 pacientes a la Cola</button>
+                        <button onclick="atenderCola()">Atender primer paciente de la Cola</button>
+                        <pre id="estructuras-output"></pre>
+                    </section>
+                    <section id="algoritmos-section">
+                        <h3>Lab Virtual 1.4. Algoritmos en JavaScript</h3>
+                        <button onclick="buscarDoctor(prompt('Buscar al doctor:'))">Buscar Doctor</button>
+                        <button onclick="ordenarDoctorDesc()">Ordenar Doctores por exp. desc.</button>
+                        <button onclick="ordenarDoctorAsc()">Ordenar Doctores por exp. asc.</button>
+                        <pre id="algoritmos-output"></pre>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <div>
+            <footer class="footer">
+                <p class="footer__title">Talca, Chile 2024</p>
+                <ul class="footer__list">
+                    <li class="footer__item">Autor: Elver</li>
+                    <li class="footer__item">Email: <a class="footer__a" href="href="mailto:elver@durero.com">elver@durero.com</a> - Instagram: <a class="footer__a" href="@elver">@elver</a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Archivos JavaScript del proyecto -->
+    <script type="module" src="src/js/equipo.js"></script>
+    <script type="module" src="src/js/json.js"></script>
+    <script type="module" src="src/js/estructura_datos.js"></script>
+    <script type="module" src="src/js/algoritmos.js"></script>
+    <script type="module" src="src/js/funcional.js"></script>
+    <script type="module" src="src/js/poo.js"></script>
+</body>
+</html>
