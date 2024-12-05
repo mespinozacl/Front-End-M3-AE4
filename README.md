@@ -28,7 +28,7 @@ Dispara un evento personalizado que simule la llegada de un nuevo paciente, most
 Implementa una función async/await para simular una llamada a una API REST que obtenga los datos de los doctores. Usa Promise para manejar los casos de éxito o fallo.
 Implementa el manejo de errores utilizando try/catch en las funciones asíncronas, y define un callback que se invoque al fallar una petición simulada.
 
-En la vista contacto.html se implementaron las funcionalidades solicitadas
+En la vista contacto.html se despliegan las funcionalidades solicitadas que fueron implementadas en el archivo async.js
 
 Boton Enviar activa el listener y se despliega mensaje.
 
