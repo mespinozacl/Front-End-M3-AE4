@@ -24,14 +24,17 @@ async function obtenerDoctores(url) {
       if (!response.ok) throw new Error("Error al obtener datos");
       const datos = await response.json();
       console.log(datos);
+      return response;
     } catch (error) {
       console.error("Error:", error.message);
     }
   }
 
-obtenerDoctores("https://api.ejemplo.com/doctores");
-obtenerDoctores("https://jsonplaceholder.typicode.com/users");
 
+const url = "https://jsonplaceholder.typicode.com/users";
+//const url = "USAR ESTO PARA OBTENER CASOS DE ERROR";
+
+obtenerDoctores(url);
 
 
 /**
@@ -49,7 +52,7 @@ function capturarEvento() {
  */
 function operacionAsincrona(callback) {
   setTimeout(() => {
-    const resultado = "Resultado de la operación asincrónica con callback";
+    const resultado = obtenerDoctores(url);
     console.log(resultado);
     outputEventosAsync.textContent = resultado;
     callback();
@@ -71,7 +74,7 @@ function ejecutarCallback() {
 function operacionConPromesa() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const exito = true;
+      const exito = obtenerDoctores(url);
       if (exito) {
         resolve("Operación exitosa con Promesa");
       } else {
